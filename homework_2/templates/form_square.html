@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div class="container m-3">
+    {% if num %}
+    <div class="container mb-3">
+        <p>Число: {{ num }}</p>
+        <p>Квадрат заданного числа: {{ square }}</p>
+    </div>
+    {% endif %}
+
+    <form method=post>
+        <input type="num" name="num" placeholder="Введите число">
+        <input type="submit" value="Отправить">
+    </form>
+</div>
+{% endblock content %}
